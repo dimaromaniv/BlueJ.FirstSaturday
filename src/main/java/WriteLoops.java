@@ -371,6 +371,7 @@ public class WriteLoops {
         int inx = 0 ;
         while (inx < numberOfVotes ) {
             System.out.println(voteTallies[inx]);
+            inx++;
             w = w + 1;
         }
             // calling

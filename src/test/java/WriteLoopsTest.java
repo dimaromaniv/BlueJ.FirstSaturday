@@ -146,4 +146,17 @@ public class WriteLoopsTest
         assertEquals(3,writeLoo1.manageYardAndJunior());
 
     }
+
+    @Test
+    public void TestTallyVote1 () {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(13,writeLoo1.tallyVote1());
+    }
+
+    @Test
+    public void TestTallyVote2 () {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(13,writeLoo1.tallyVote2());
+    }
+
 }
