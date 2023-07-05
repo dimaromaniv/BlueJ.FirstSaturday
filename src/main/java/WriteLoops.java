@@ -65,7 +65,7 @@ public class WriteLoops {
 
     public int byTwoTo32() {
         int w = 0;
-        for (int i = 2 ; i <= 32 ; i += 2){
+        for (int i = 2 ; i <=  32 ; i += 2){
             w = w + 1;
         }
         // Write a FOR loop from 0 to 32 by 2s.
@@ -106,9 +106,9 @@ public class WriteLoops {
     public int helloZipCode() {
         int w = 0;
         for ( int i = 5 ; i <= 105 ; i ++ ) {
-            if ( i > 51 ) {
-                System.out.println("Hello Zipcode”");
+            if ( i <= 51 ) {
                 w = w + 1;
+                System.out.println("Hello Zipcode”");
             }
         }
         // Write a FOR loop that counts from 5 to 105. Put an IF
@@ -172,10 +172,10 @@ public class WriteLoops {
         int highestScore = 236;
         int currentScore = gameNextScore();
         int runningScore = 0;
-        while (runningScore < highestScore) {
+        while (runningScore <= highestScore) {
+            w = w + 1;
             runningScore = runningScore + currentScore;
             currentScore = gameNextScore();
-            w = w + 1;
         }
         // do your while loop here
  
@@ -217,7 +217,7 @@ public class WriteLoops {
         String adminPhoneNumber = "+1 202 456 1111";
         
          while (serverIsRunning()) {
-             waitFor(5);
+             waitFor(5 );
              w = w + 1;
          }
          if (!serverIsRunning()) {
@@ -225,7 +225,6 @@ public class WriteLoops {
              tryServerRestart("Help!" ,adminPhoneNumber);
          }
         // calling
-        w = w + 1;
         // each time through the inner loop
         
         return w;
