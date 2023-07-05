@@ -197,7 +197,7 @@ public class WriteLoops {
         do {runningScore = runningScore + currentScore;
             w = w + 1;
             currentScore = gameNextScore();}
-        while ( runningScore < highestScore
+        while ( runningScore == highestScore
         );
         // do your while loop here
 
@@ -237,7 +237,7 @@ public class WriteLoops {
         int w = 0;
         int i ;
         i = 7 ;
-        while (i < 50) {
+        while (i <= 50) {
             i = i + 7;
             w = w + 1;
         }
@@ -263,7 +263,7 @@ public class WriteLoops {
             w = w + 1;
             // each time through the inner loop
         }
-        System.out.print("The Sum is ");
+        System.out.print("The Sum is " + sumOfThrees);
         System.out.println(sumOfThrees);
 
         return w;
@@ -327,7 +327,7 @@ public class WriteLoops {
         boolean onTime = true;
         boolean yardNeedsMowed = true;
 
-        while (isSummer()) {
+        while (!isSummer()) {
             if(yardNeedsMowed) {
                 yellAtJuniorToMowLawn();
             }
@@ -337,7 +337,6 @@ public class WriteLoops {
         // ADD YOUR CODE here.
  
             // be sure to call
-            w = w + 1;
             // each time inside the loop
         
         return w;
