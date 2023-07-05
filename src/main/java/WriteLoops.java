@@ -167,23 +167,24 @@ public class WriteLoops {
     // is less than “highestScore” and if it is, adds “currentScore” to
     // "runningScore"
     // and then sets “currentScore” to “gameNextScore()”
-    public int checkGameScore() {
+    public boolean checkGameScore() {
         int w = 0;
         int highestScore = 236;
         int currentScore = gameNextScore();
         int runningScore = 0;
-        while (runningScore <= highestScore) {
+        while (runningScore < highestScore) {
             w = w + 1;
             runningScore = runningScore + currentScore;
             currentScore = gameNextScore();
+
         }
         // do your while loop here
- 
-            // calling
 
-            // each time through the inner loop
-        
-        return w; // >= 3;
+        // calling
+
+        // each time through the inner loop
+
+        return w >= 3;
     }
 
     // Rewrite the previous WHILE loop as a DO..WHILE loop.
@@ -257,13 +258,13 @@ public class WriteLoops {
         int sumOfThrees = 0;
 
         // this is a so called Enhanced for loop
-        for (int index : threes_array) {
-            sumOfThrees = sumOfThrees + threes_array[index];
-            // calling
-            w = w + 1;
-            // each time through the inner loop
+        for (int i = 0 ; i < threes_array.length  ; i ++) {
+            sumOfThrees = sumOfThrees + threes_array[i];
+            w = w + 1 ;
         }
-        System.out.print("The Sum is " + sumOfThrees);
+            // each time through the inner loop
+
+        System.out.print("The Sum is " + sumOfThrees + "\n");
         System.out.println(sumOfThrees);
 
         return w;

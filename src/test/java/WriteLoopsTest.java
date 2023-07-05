@@ -134,11 +134,11 @@ public class WriteLoopsTest
         assertEquals(7,writeLoo1.loop50by7());
     }
 
-//    @Test
-//    public void  TestFoo() {
-//        WriteLoops writeLoo1 = new WriteLoops();
-//        assertEquals(84,writeLoo1.foo());
-//    }
+    @Test
+    public void  TestFoo() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7,writeLoo1.foo());
+    }
 
     @Test
     public void ManageYardAndJunior() {
